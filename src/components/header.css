@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  background-color: #131921;
+  max-height: 60px !important;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow-x: scroll;
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.header {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.header__logo {
+  flex: 1;
+  width: 100px;
+  object-fit: contain;
+}
+.header__logoDiv {
+  padding-top: 15px;
+  padding-right: 70px;
+  flex: 0;
+  display: flex;
+  font-weight: 700;
+  color: white;
+}
+
+.header__searchCombo {
+  flex: 3;
+}
+input:focus,
+textarea:focus,
+select:focus + .header__searchCombo {
+  outline: none;
+  /* outline-style: solid;
+  outline-color: #febd69 !important; */
+}
+
+.header__logoDiv > p {
+  font-size: small;
+  padding-top: 10px;
+}
+.header__search {
+  flex: 3;
+  margin: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width: 900px;
+}
+.header__search input {
+  font-size: medium;
+  padding: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px 0px 0px 5px;
+  width: 90%;
+  height: 100%;
+  border: 0;
+}
+.header__searchIconDiv {
+  background-color: #febd69;
+  font-size: 15px !important;
+  height: 100% !important;
+
+  width: 5% !important;
+  border-radius: 0px 5px 5px 0px;
+}
+.header__searchIcon {
+  padding: 7px 6px;
+  width: 70% !important;
+  height: 70% !important;
+}
+
+.header__nav {
+  flex: 1.5;
+  padding-top: 15px;
+  color: white;
+  display: flex;
+}
+.header__navOption {
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+}
+.header__navCountry > span {
+  padding: 0;
+  margin-bottom: 20px !important;
+}
+.header__navCountry {
+  flex: 0.7;
+  padding-left: 0px;
+  padding: 0;
+}
+.header__navOption > p:nth-child(n + 1) {
+  padding-left: 2px;
+  font-size: smaller;
+  color: rgb(170, 170, 170);
+}
+.header__navOption > p:nth-child(n + 2) {
+  padding-left: 2px;
+  font-size: smaller;
+  color: white;
+}
+
+.header__navOptionCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+}
+
+.header__navOptionCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__navOptionCard > .MuiSvgIcon-root {
+  font-size: 35px;
+}
+
+.header__navOptionCard > p {
+  padding-top: 10px;
+}
