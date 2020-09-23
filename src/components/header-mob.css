@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+  }
+  .header__nav > div {
+    width: 60px;
+    margin-left: 1px;
+    margin-right: 10px;
+  }
+  .header__search input {
+    max-width: 75vw;
+  }
+  .header__search {
+    min-width: 100vw;
+    max-width: 200px !important;
+  }
+  .header__searchIconDiv {
+    min-width: 50px !important;
+  }
+  .header__searchIcon {
+    padding: 4px 4px;
+    width: 90% !important;
+    height: 90% !important;
+  }
+  .header__navOptionCard > p {
+    display: none;
+  }
+  .header__navOptionCard > p > span {
+    display: grid !important;
+  }
+}
