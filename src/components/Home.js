@@ -14,12 +14,14 @@ function Home() {
         <img className='home__imgMob' src='/AmazonBackdrop.jpg' alt='prime' />
         <div className='home__row'>
           <Product
+            id={1223}
             title='TP-Link LB120 Wi-Fi SmartLight'
             rating={4}
             price='799'
             img='https://images-na.ssl-images-amazon.com/images/I/21TCPoTq%2BkL.jpg'
           />
           <Product
+            id={1224}
             title='TP-Link Kasa Smart WiFi Light Bulb, Dimmable by TP-Link No Hub Required, Works with Alexa & Google (KL110) '
             rating={3}
             price='699'
@@ -28,18 +30,21 @@ function Home() {
         </div>
         <div className='home__row'>
           <Product
+            id={1225}
             title='Beardo Turmeric Clay Mask For Men, 50 gm '
             rating={5}
             price='235'
             img='https://images-na.ssl-images-amazon.com/images/I/41Gcp-UAlLL.jpg'
           />
           <Product
+            id={1226}
             title='WuFuYuan - Tapioca Pearl (Black) - Net Wt. 8.8 Oz.'
             rating={2}
             price='1,679'
             img='https://images-na.ssl-images-amazon.com/images/I/610v9u2ZRSL._SL1000_.jpg'
           />
           <Product
+            id={1227}
             title='Acer B227Q 21.5" IPS LED Full HD Monitor - Inbuilt HD Web CAM with MIC - Height Adjustment Pivot '
             rating={4}
             price='11,567'
@@ -48,6 +53,7 @@ function Home() {
         </div>
         <div className='home__row'>
           <Product
+            id={1228}
             title='(Renewed) Lenovo Legion Y7000 9th gen Intel Core i5 15.6 inch FHD Gaming Laptop (8GB/1TB HDD+256 GB SSD/Windows 10/NVIDIA GTX 1050 3GB Graphics/Black/2.3Kg), 81V4000LIN '
             rating={3}
             price='64,999'
