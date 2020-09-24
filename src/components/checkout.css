@@ -1,0 +1,29 @@
+.checkout {
+  padding: 15px;
+  background-color: white;
+  height: max-content;
+  display: flex;
+}
+
+.checkout > div {
+  padding: 5px;
+}
+
+.checkout__right {
+  flex: 1;
+}
+
+.checkout__left {
+  flex: 3;
+}
+
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.checkout__basketTitle {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}

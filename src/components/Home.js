@@ -36,7 +36,7 @@ function Home() {
           <Product
             title='WuFuYuan - Tapioca Pearl (Black) - Net Wt. 8.8 Oz.'
             rating={2}
-            price='1679'
+            price='1,679'
             img='https://images-na.ssl-images-amazon.com/images/I/610v9u2ZRSL._SL1000_.jpg'
           />
           <Product
