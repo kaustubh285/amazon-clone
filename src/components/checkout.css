@@ -1,0 +1,79 @@
+.checkout {
+  padding: 15px;
+  background-color: white;
+  height: max-content;
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .checkout {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .checkout__ad {
+    height: 50px;
+  }
+
+  .checkout__cart {
+    border-bottom: 1px solid lightgray;
+  }
+  .checkout__cartImage {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.checkout > div {
+  padding: 5px;
+}
+
+.checkout__right {
+  flex: 1;
+}
+
+.checkout__left {
+  flex: 3;
+}
+
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.checkout__Title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.checkout__cart {
+  padding: 10px;
+  margin-right: 60px;
+  margin-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.checkout__itemInfo {
+  padding: 10px;
+  max-width: 72%;
+}
+
+.checkout__itemInfo p {
+  padding: 2px;
+}
+.checkout__itemImage {
+  object-fit: contain;
+  width: 170px;
+}
+
+.checkout__itemInfo > .MuiButton-root {
+  background-color: rgba(240, 193, 75, 0.8) !important;
+  height: 20px !important;
+  width: 140px;
+}
+
+.checkout__itemInfo .MuiButton-label {
+  font-size: 9px !important;
+}

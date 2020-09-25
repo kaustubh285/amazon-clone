@@ -1,0 +1,53 @@
+.subtotal {
+  width: 300px;
+  height: 100px;
+  padding: 20px 20px 20px 20px;
+  background-color: #f3f3f3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtotal {
+    margin-bottom: 15px;
+  }
+  .subtotal p {
+    font-size: smaller;
+  }
+  .subtotal > .MuiButton-root {
+    background-color: rgba(240, 193, 75, 1);
+    height: 30px !important;
+  }
+  .MuiButton-label {
+    margin-top: unset !important;
+  }
+}
+
+.subtotal > .MuiButton-root {
+  background-color: rgba(240, 193, 75, 1);
+  width: 170px;
+}
+
+.subtotal > .MuiButton-root > span {
+  font-size: 10px !important;
+}
+
+.subtotal > .MuiButton-root:hover {
+  background-color: rgba(240, 193, 75, 0.8) !important;
+
+  transform: scale(1.01);
+}
+
+.subtotal__gift {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subtotal__gift > input {
+  margin-right: 5px;
+}
