@@ -15,7 +15,7 @@ function Home() {
         <div className='home__row'>
           <Product
             id={1223}
-            title='TP-Link LB120 Wi-Fi SmartLight'
+            title='TP-Link LB100 Wi-Fi SmartLight 7W E27 to B22 Base LED Bulb (Off-White) Compatible with Android, iOS, Amazon Alexa and Google Assistant '
             rating={4}
             price='799'
             img='https://images-na.ssl-images-amazon.com/images/I/21TCPoTq%2BkL.jpg'

@@ -12,6 +12,22 @@
   border-radius: 3px;
 }
 
+@media only screen and (max-width: 600px) {
+  .subtotal {
+    margin-bottom: 15px;
+  }
+  .subtotal p {
+    font-size: smaller;
+  }
+  .subtotal > .MuiButton-root {
+    background-color: rgba(240, 193, 75, 1);
+    height: 30px !important;
+  }
+  .MuiButton-label {
+    margin-top: unset !important;
+  }
+}
+
 .subtotal > .MuiButton-root {
   background-color: rgba(240, 193, 75, 1);
   width: 170px;
