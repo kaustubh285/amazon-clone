@@ -40,12 +40,16 @@ function Navbar() {
             </span>
           </Grid>
           <Grid item xs={1}></Grid>
-          <Grid item xs className='navigation__gridText'>
-            <p>Hello</p> <p>Sign In</p>
-          </Grid>
+          <Link to='/login'>
+            <Grid item xs className='navigation__gridText'>
+              <p>Hello</p> <p>Sign In</p>
+            </Grid>
+          </Link>
+          <Grid item xs={1}></Grid>
           <Grid item xs className='navigation__gridText'>
             <p>Orders</p> <p>& return</p>
           </Grid>
+
           <Grid item xs className='navigation__gridText'>
             <p>Try</p> <p>Prime</p>
           </Grid>
