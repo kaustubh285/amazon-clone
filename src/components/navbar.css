@@ -1,0 +1,115 @@
+.navbar {
+  background-color: #131921;
+  padding-bottom: 8px;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  float: right;
+  padding-right: -7px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.header__searchCombo {
+  background-color: #febd69;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.header__searchCombo {
+  border-radius: 5px !important;
+}
+
+.header__searchIcon {
+  padding: 3px;
+}
+
+.header__searchInput {
+  width: 95%;
+}
+input:focus,
+textarea:focus,
+select:focus + .header__searchCombo {
+  outline: none;
+}
+
+.header__searchInput {
+  padding: 6px !important;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.header__searchIconDiv {
+  width: auto;
+}
+
+.header__logoDiv {
+  color: white;
+  display: flex;
+  padding-top: 2%;
+  padding-left: 0%;
+  padding-right: 0%;
+  max-width: 100px;
+  max-height: 35px;
+}
+
+.MuiSvgIcon-root {
+  height: 90% !important;
+  padding-left: 7px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.navigation__grid {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.navigation__grid {
+  color: white;
+}
+
+.navigation__gridFlag {
+  font-size: 1.5rem;
+}
+
+.navigation__gridText > p:nth-child(n + 1) {
+  font-size: smaller;
+  color: rgb(170, 170, 170);
+}
+.navigation__gridText > p:nth-child(n + 2) {
+  font-size: smaller;
+  color: white;
+}
+
+.navigation__gridCart {
+  color: white;
+  display: flex;
+}
+
+.navigation__gridCart > .MuiSvgIcon-root {
+  margin-top: 5px;
+}
+
+.navigation__gridCart > span {
+  margin-top: 7px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .logoDiv__grid {
+    padding: 3px !important;
+    padding-top: 9px !important;
+  }
+  .searchCombo__grid {
+    padding: 3px !important;
+  }
+}
