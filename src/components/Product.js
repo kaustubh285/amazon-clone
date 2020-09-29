@@ -2,6 +2,7 @@ import { Button } from "@material-ui/core";
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import "./product.css";
+import HalfRating from "./Rating";
 
 function Product({ id, title, rating, price, img }) {
   const [{ basket, subTotal }, dispatch] = useStateValue();
@@ -26,15 +27,7 @@ function Product({ id, title, rating, price, img }) {
       <div className='product__info'>
         <p>{title}</p>
         <div className='product__rating'>
-          {Array(rating)
-            .fill()
-            .map((_, i) => (
-              <p key={i}>
-                <span role='img' aria-label='star'>
-                  ⭐
-                </span>
-              </p>
-            ))}
+          <HalfRating stars={rating} />
         </div>
         <p className='product__price'>
           <small>

@@ -10,18 +10,33 @@
     flex-wrap: wrap;
   }
   .checkout__ad {
-    height: 50px;
+    max-height: 100px;
   }
 
   .checkout__cart {
+    margin-right: 15px !important;
     border-bottom: 1px solid lightgray;
   }
   .checkout__cartImage {
     width: 98%;
-
     display: flex;
     justify-content: center;
   }
+
+  .checkout__itemInfo p {
+    text-align: justify;
+  }
+}
+
+.makeStyles-root-1 {
+  margin-left: -8px;
+}
+
+.MuiRating-root {
+  font-size: 15px !important;
+}
+.MuiRating-decimal {
+  width: 15px;
 }
 
 .checkout > div {
@@ -70,8 +85,9 @@
 }
 
 .checkout__itemInfo > .MuiButton-root {
+  margin-top: 15px !important;
   background-color: rgba(240, 193, 75, 0.8) !important;
-  height: 20px !important;
+  height: 26px !important;
   width: 140px;
 }
 .checkout__ad {
