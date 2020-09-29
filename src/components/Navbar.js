@@ -39,7 +39,7 @@ function Navbar() {
               🇮🇳
             </span>
           </Grid>
-          <Grid xs={1}></Grid>
+          <Grid item xs={1}></Grid>
           <Grid item xs className='navigation__gridText'>
             <p>Hello</p> <p>Sign In</p>
           </Grid>

@@ -2,7 +2,8 @@ import { Button } from "@material-ui/core";
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import "./checkout.css";
-import HalfRating from "./Rating";
+import CheckoutProduct from "./CheckoutProduct";
+
 import Subtotal from "./Subtotal";
 
 function Checkout() {
@@ -23,39 +24,14 @@ function Checkout() {
         <div className='checkout__basket'>
           <h2 className='checkout__Title'>Your shopping basket</h2>
           {basket.map((item, key) => (
-            <div className='checkout__cart'>
-              <div className='checkout__cartImage'>
-                <img
-                  className='checkout__itemImage'
-                  src={item.img}
-                  alt='prod-1'
-                />
-              </div>
-              <div className='checkout__itemInfo'>
-                <p className='checkout__basketTitle'>{item.title}</p>
-                <HalfRating stars={item.rating} />
-                <p>
-                  <strong>₹{item.price}</strong>
-                </p>
-                <div className='product__rating'>
-                  {/* {Array(item.rating)
-                    .fill()
-                    .map((_, i) => (
-                      <p key={i}>
-                        <span role='img' aria-label='star'>
-                          ⭐
-                        </span>
-                      </p>
-                    ))} */}
-                </div>
-                <Button
-                  color='default'
-                  variant='outlined'
-                  style={{ marginTop: "5px" }}>
-                  Remove from cart
-                </Button>
-              </div>
-            </div>
+            <CheckoutProduct
+              id={item.id}
+              title={item.title}
+              rating={item.rating}
+              price={item.price}
+              img={item.img}
+              key={key}
+            />
           ))}
         </div>
       </div>
