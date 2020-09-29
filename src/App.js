@@ -6,12 +6,13 @@ import Home from "./components/Home";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./components/Checkout";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
       <div className='app'>
-        <Header />
+        <Navbar />
         <Switch>
           <Route path='/checkout'>
             <Checkout />

@@ -1,7 +1,7 @@
 import React from "react";
-import "./header.css";
-import "./header-mob.css";
+
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import ShoppingCartTwoToneIcon from "@material-ui/icons/ShoppingCartTwoTone";
 import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
@@ -33,6 +33,7 @@ function Header() {
           </div>
         </div>
       </div>
+
       <div className='header__nav'>
         <div className='header__navCountry'>
           <span style={{ fontSize: "35px" }} role='img' aria-label='india-logo'>
@@ -53,7 +54,7 @@ function Header() {
         </div>
         <Link to='/checkout'>
           <div className='header__navOptionCard'>
-            <ShoppingCartIcon />
+            <ShoppingCartTwoToneIcon />
 
             <span
               style={{

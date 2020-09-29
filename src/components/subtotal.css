@@ -13,7 +13,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .checkout__itemInfo {
+    max-width: unset !important;
+  }
   .subtotal {
+    max-width: 78vw;
     margin-bottom: 15px;
   }
   .subtotal p {

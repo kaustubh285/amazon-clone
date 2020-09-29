@@ -7,14 +7,18 @@ import Subtotal from "./Subtotal";
 function Checkout() {
   const [{ basket, subTotal }, dispatch] = useStateValue();
 
+  const adv = [
+    "https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg",
+    "https://images-eu.ssl-images-amazon.com/images/G/31/prime/primeday/PD18/AAFeedback/Bruno/1500x300_Starts_Banner_v2._CB474351192_.gif",
+  ];
+
+  const adv_number = Math.floor(Math.random() * adv.length);
+
+  console.log(adv_number);
   return (
     <div className='checkout'>
       <div className='checkout__left'>
-        <img
-          src='https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg'
-          className='checkout__ad'
-          alt='ad'
-        />
+        <img src={adv[adv_number]} className='checkout__ad' alt='ad' />
         <div className='checkout__basket'>
           <h2 className='checkout__Title'>Your shopping basket</h2>
           {basket.map((item, key) => (

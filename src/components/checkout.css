@@ -18,6 +18,7 @@
   }
   .checkout__cartImage {
     width: 98%;
+
     display: flex;
     justify-content: center;
   }
@@ -72,6 +73,10 @@
   background-color: rgba(240, 193, 75, 0.8) !important;
   height: 20px !important;
   width: 140px;
+}
+.checkout__ad {
+  max-height: 140px !important;
+  object-fit: contain;
 }
 
 .checkout__itemInfo .MuiButton-label {
