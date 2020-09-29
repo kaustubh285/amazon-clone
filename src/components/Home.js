@@ -23,7 +23,7 @@ function Home() {
           <Product
             id={1224}
             title='TP-Link Kasa Smart WiFi Light Bulb, Dimmable by TP-Link No Hub Required, Works with Alexa & Google (KL110) '
-            rating={3}
+            rating={3.5}
             price='699'
             img='https://images-na.ssl-images-amazon.com/images/I/41lp2Y6iwPL._SL1000_.jpg'
           />

@@ -2,6 +2,7 @@ import { Button } from "@material-ui/core";
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import "./checkout.css";
+import HalfRating from "./Rating";
 import Subtotal from "./Subtotal";
 
 function Checkout() {
@@ -32,11 +33,12 @@ function Checkout() {
               </div>
               <div className='checkout__itemInfo'>
                 <p className='checkout__basketTitle'>{item.title}</p>
+                <HalfRating stars={item.rating} />
                 <p>
                   <strong>₹{item.price}</strong>
                 </p>
                 <div className='product__rating'>
-                  {Array(item.rating)
+                  {/* {Array(item.rating)
                     .fill()
                     .map((_, i) => (
                       <p key={i}>
@@ -44,7 +46,7 @@ function Checkout() {
                           ⭐
                         </span>
                       </p>
-                    ))}
+                    ))} */}
                 </div>
                 <Button
                   color='default'
