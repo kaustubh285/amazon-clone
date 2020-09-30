@@ -1,6 +1,8 @@
 export const initalState = {
   basket: [],
   subTotal: 0,
+  user: null,
+  userName: null,
 };
 
 const reducer = (state, action) => {
@@ -32,6 +34,16 @@ const reducer = (state, action) => {
         ...state,
         basket: newBasket,
         subTotal: state.subTotal - parseInt(action.price.replace(/,/g, ""), 10),
+      };
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
+    case "SET_USERNAME":
+      return {
+        ...state,
+        userName: action.userName,
       };
     default:
       return state;
