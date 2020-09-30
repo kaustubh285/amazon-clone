@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import ShoppingCartTwoToneIcon from "@material-ui/icons/ShoppingCartTwoTone";
 import SearchIcon from "@material-ui/icons/Search";
 import { useStateValue } from "../StateProvider";
 import "./navbar.css";
+import { auth } from "../firebase";
 
 function Navbar() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, userName, user }, dispatch] = useStateValue();
+  // console.log("_____________________________________________________________");
+  console.log(user?.displayName);
+
+  const handleAuth = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
   return (
     <div className='navbar'>
       <Grid container spacing={3}>
@@ -39,10 +49,13 @@ function Navbar() {
               🇮🇳
             </span>
           </Grid>
-          <Grid item xs={1}></Grid>
-          <Link to='/login'>
-            <Grid item xs className='navigation__gridText'>
-              <p>Hello</p> <p>Sign In</p>
+
+          <Link to={!user && `/login`}>
+            <Grid item xs className='navigation__gridText' onClick={handleAuth}>
+              <p>Hello {user?.displayName}</p>
+              <p style={{ wordWrap: "break-word" }}>
+                {user ? "Sign Out" : "Sign In"}
+              </p>
             </Grid>
           </Link>
           <Grid item xs={1}></Grid>

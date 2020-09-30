@@ -15,7 +15,6 @@ function Checkout() {
 
   const adv_number = Math.floor(Math.random() * adv.length);
 
-  console.log(adv_number);
   return (
     <div className='checkout'>
       <div className='checkout__left'>

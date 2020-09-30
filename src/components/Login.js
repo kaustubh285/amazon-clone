@@ -2,12 +2,16 @@ import { Button } from "@material-ui/core";
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "../firebase";
+import { useStateValue } from "../StateProvider";
 import "./login.css";
 
 function Login() {
   const history = useHistory();
   const [email, setEmail] = useState("");
+  const [displayName, setDisplayName] = useState("");
   const [password, setPassword] = useState("");
+
+  const [{ userName }, dispatch] = useStateValue();
 
   const signIn = (e) => {
     e.preventDefault();
@@ -16,6 +20,7 @@ function Login() {
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
         console.log(auth);
+
         if (auth) {
           history.push("/");
         }
@@ -29,7 +34,11 @@ function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
+        auth.user.updateProfile({
+          displayName: displayName,
+        });
         console.log(auth);
+
         if (auth) {
           history.push("/");
         }
@@ -48,6 +57,12 @@ function Login() {
       <div className='login__container'>
         <h2>Sign in</h2>
         <form>
+          <h5>Username</h5>
+          <input
+            type='text'
+            value={displayName}
+            onChange={(e) => setDisplayName(e.target.value)}
+          />
           <h5>Email</h5>
           <input
             type='text'

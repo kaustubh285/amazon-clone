@@ -7,8 +7,6 @@ import HalfRating from "./Rating";
 function Product({ id, title, rating, price, img }) {
   const [{ basket, subTotal }, dispatch] = useStateValue();
 
-  console.log(basket);
-  console.log(subTotal);
   const addtobasket = () => {
     dispatch({
       type: "ADD_TO_BASKET",
